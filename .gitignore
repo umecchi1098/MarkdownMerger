@@ -1,0 +1,33 @@
+# Build outputs
+bin/
+obj/
+**/bin/
+**/obj/
+
+# IDE / tooling
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.userprefs
+
+# Logs / temp
+*.log
+*.cache
+*.tmp
+~$*
+
+# Dotnet tooling
+*.ncrunch*
+*.snupkg
+*.swp
+*.DS_Store
+TestResult*/
+TestResults/
+*.coverage
+*.coveragexml
+
+# Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
