@@ -21,12 +21,12 @@ MarkdownMerger.exe -i <入力...> [-o <出力.md>] [--no-source] [--no-sort-zip]
 
 ### 実行例
 ```
-dotnet run --project MergeMd/MarkdownMerger.csproj -- docs/notes README.md archive.zip -o combined.md
+dotnet run --project MarkdownMerger/MarkdownMerger.csproj -- docs/notes README.md archive.zip -o combined.md
 ```
 
 ## ビルド
 - 前提: .NET 10 SDK
-- 開発: `dotnet build` または `dotnet run --project MergeMd/MarkdownMerger.csproj -- <args>`
+- 開発: `dotnet build` または `dotnet run --project MarkdownMerger/MarkdownMerger.csproj -- <args>`
 - 発行（単一ファイル例）: `dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true`
 
 ## メモ
@@ -36,5 +36,5 @@ dotnet run --project MergeMd/MarkdownMerger.csproj -- docs/notes README.md archi
 - Explorerから起動した場合は処理後にEnter入力待ちになります。
 
 ## 名称
-- 正式名称: Markdown Merger（旧 MergeMd）
+- 正式名称: Markdown Merger
 - 実行ファイル名: `MarkdownMerger.exe`
